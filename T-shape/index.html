@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The T-Shope Challenge</title>
+</head>
+<body>
+        <div class="shape"></div>
+        <div class='ball'></div>
+        <div class='line1'></div>
+        <div class='line2'></div>
+<style>
+      
+
+  body{
+    /* Change the margin because it operates differents in the browswer and when 
+    you solve the chanllenge in the CSS BAttle sandbox
+    intially the margin of the body is 0px
+     */
+    margin-top:200px;
+    background:#401653;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+  }
+  .shape{
+    width: 120px;
+    height: 150px;
+    background: #A94EA4;
+    clip-path: polygon(0 0,50% 40%, 100% 0, 100% 66%, 50% 100%, 0 66%);
+    position:absolute;
+    
+  }
+  .ball{
+    position:absolute;
+    background:#A94EA4;
+    width:116px;
+    height:100px;
+    border-radius:50%;
+    top:-70px;
+    /* I also Changed the position of the ball to align it correclty with the shape
+     Because i have change the margin of the body everything changes initially 
+     it was 40px from the top
+     */
+  }
+  .line1{
+    background:#F7BED9;
+    height:10px;
+    width:60px;
+    position:absolute;
+    /* Also chnaged the position of line1  initially it was 114px from top */
+    top:-38px;    
+    border-radius:24px;
+  }
+  .line2{
+    background:#F7BED9;
+    height:70px;
+    width:10px;
+    position:absolute;
+    top:114;
+    border-radius:24px;
+  }
+</style>
+    
+</body>
+</html>
