@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly Game</title>
+</head>
+<body>
+<div class="cap"></div>
+<div class="line"></div>
+<div class="dot"></div>
+<div class="donut"></div>
+<div class="a ball"></div>
+<div class="b ball"></div>
+<style>
+  body{
+    margin:0;
+    background:#E38F66;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+  }
+  .cap{
+    width: 120px;
+    height: 90px;
+    background: #FFFBDA;
+    border-top-left-radius:100px;
+    border-top-right-radius:100px;
+    position:absolute;
+    top:40px;
+  }
+  .line{
+     width: 180px;
+     height: 20px;
+     background: #FFFBDA;
+     position:absolute;
+     top:130px;
+    border-radius:24px;
+  }
+  .dot{
+    width: 20px;
+     height: 20px;
+     background: #FFFBDA;
+     position:absolute;
+     top:172px;
+     left:160px;
+     border-radius:24px;
+  }
+  .donut{
+     width: 20px;
+     height: 20px;
+     background: #E38F66;
+     position:absolute;
+     top:162px;
+     left:210px;
+     border:10px solid #FFFBDA;
+     border-radius:50px;
+  }
+    .ball{
+     width: 40px;
+     height: 40px;
+     background: #FFFBDA;
+     position:absolute;
+     top:220px;
+     left:204px;
+     border-radius:50px 50px 0px 50px;
+     transform:rotate(-45deg)
+  }
+  .b{
+     width: 40px;
+     height: 40px;
+     background: #FFFBDA;
+     position:absolute;
+     top:220px;
+     left:155px;
+     border-radius:50px 50px 0px 50px;
+     transform:rotate(140deg)
+  }
+</style>
+
+</body>
+</html>
