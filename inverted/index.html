@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="a"></div>
+    <div class="b box"></div>
+
+    <style>
+      body {
+        margin: 0;
+        background: #d95362;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .a {
+        background: #2d3464;
+        clip-path: circle(50%);
+        height: 220px;
+        width: 220px;
+      }
+      .b {
+        background: #d95362;
+        height: 100px;
+        width: 180px;
+        clip-path: polygon(
+          41% 0%,
+          63% 0%,
+          62% 55%,
+          93% 55%,
+          93% 95%,
+          10% 95%,
+          10% 55%,
+          40% 55%
+        );
+        position: absolute;
+        bottom: 125;
+        left: 107;
+      }
+    </style>
+  </body>
+</html>
